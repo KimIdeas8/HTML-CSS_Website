@@ -1,0 +1,176 @@
+body{
+    font-family: 'Markazi Text', serif;
+    margin:3rem 5%;
+}
+
+h1{
+    font-size:3rem;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+}
+
+h2{
+    font-size:2rem;
+}
+
+header>img{
+    display:block; /* changes from inline to block element */
+    margin-left:auto;
+    margin-right:auto;
+    cursor: pointer;
+}
+
+nav{
+    background-color: #edefee;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav ul{
+    /*display:flex;*/
+    list-style:none;
+    font-size:1.5rem;
+    text-align: center;
+    padding-inline-start: 0rem;
+}
+
+nav ul li{
+    /*flex: 1;*/
+    display:inline-block; /* block + inline: so that elements are in one row instead of multiple rows */
+    margin:0.25rem;
+}
+
+nav ul a{
+    color:black;
+    text-decoration: none;
+}
+
+/*
+a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+*/
+
+nav ul a:active{
+    text-decoration: underline;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+}
+
+/*
+a:hover{
+    border-bottom: 5px solid #edefee;
+}
+
+p{
+    font-size:1.5rem;
+}
+
+button{
+    border:1px solid black;
+    font-family: 'Markazi Text', serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+*/
+
+section{
+    display:flex; /*takes up one row regardless of viewport size*/
+    gap:2rem 1rem; /*row gap, then col gap*/
+    margin-top:1rem
+}
+
+article{
+    flex:1; /*to be reviewed: for responsive design - will affects the top banner*/
+    /* border-radius: 1rem; */
+}
+article img{
+    max-width:100%;
+}
+
+/*
+article ul{
+    list-style:none;
+}
+*/
+
+main article{
+    /*background-color: #edefee;*/
+    padding-left:1rem; /*inside article*/
+    padding-right:1rem;
+}
+
+#hero{
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url("/images/banner2.gif");
+    min-height:65vh;
+    background-size:cover;
+    background-position:75%;
+    color:white;
+    /*border-radius: 1rem;*/
+    padding-top:1rem;
+}
+#hero p{
+    max-width:75%;
+}
+
+#hero button{
+    color:white;
+    border:1px solid white;
+}
+/*
+.promotion.banner{
+    flex: 7;
+}
+
+.promotion.text{
+    flex:3;
+    margin:0 5%;
+}
+*/
+footer{
+    display:flex;
+    margin: 2rem 0;
+    gap:2rem 1rem;
+}
+
+footer img{
+    max-width: 50%;
+}
+
+footer p{
+    border-top:#333333;
+    border-style:solid;
+    border-width:0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right:none;
+    text-align: right;
+}
+footer div{
+    flex:1;
+}
+
+p{
+    font-size:1.5rem;
+}
+
+button{
+    font-family: 'Markazi Text', serif;
+    font-size:1.5rem;
+    background:transparent;
+    border:1px solid black;
+    color:black;
+    padding:1rem;
+    margin:1rem 0;
+    cursor: pointer;
+}
